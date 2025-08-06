@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int tp = sc.nextInt();
+        int ppt = sc.nextInt();
+        int team = 0;
+        while(tp >= ppt)
+        {
+            team++;
+            tp = (tp-ppt);
+        }
+        System.out.println("Total teams formed: " + team );
+        System.out.println("Players left out: " + tp );
+        
+
+    }
+}
